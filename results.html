@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bibliothèque en Ligne — Résultats de recherche</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">📚 Bibliothèque en Ligne</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="results.html" class="active">Catalogue</a></li>
+          <li><a href="wishlist.html">Ma liste de lecture</a></li>
+          <li><a href="manage.html">Gérer les livres</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="padding-top:2rem;">
+      <form id="search-form" class="search-form">
+        <input type="text" id="search-input" name="q" placeholder="Rechercher un titre ou un auteur…">
+        <button type="submit" class="btn btn-primary">Rechercher</button>
+      </form>
+    </section>
+
+    <h2 class="section-title" id="query-label">Résultats</h2>
+    <div id="results-grid" class="book-grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      Projet Bibliothèque en Ligne — Cours Développement Web
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

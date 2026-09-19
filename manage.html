@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bibliothèque en Ligne — Gérer les livres</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">📚 Bibliothèque en Ligne</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="results.html">Catalogue</a></li>
+          <li><a href="wishlist.html">Ma liste de lecture</a></li>
+          <li><a href="manage.html" class="active">Gérer les livres</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title" id="form-title">Ajouter un livre</h2>
+
+    <form id="book-form" class="form-card">
+      <input type="hidden" name="id">
+
+      <label for="titre">Titre *</label>
+      <input type="text" id="titre" name="titre" required>
+
+      <label for="auteur">Auteur *</label>
+      <input type="text" id="auteur" name="auteur" required>
+
+      <label for="maison_edition">Maison d'édition</label>
+      <input type="text" id="maison_edition" name="maison_edition">
+
+      <label for="nombre_exemplaire">Nombre d'exemplaires</label>
+      <input type="number" id="nombre_exemplaire" name="nombre_exemplaire" min="0" value="1">
+
+      <label for="description">Description</label>
+      <textarea id="description" name="description"></textarea>
+
+      <div style="margin-top:1.25rem; display:flex; gap:0.6rem;">
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
+        <button type="button" id="cancel-edit" class="btn btn-secondary" style="display:none;">Annuler</button>
+      </div>
+    </form>
+
+    <h2 class="section-title">Collection actuelle</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Titre</th>
+          <th>Auteur</th>
+          <th>Exemplaires</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="manage-table-body"></tbody>
+    </table>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      Projet Bibliothèque en Ligne — Cours Développement Web
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

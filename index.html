@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bibliothèque en Ligne — Accueil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">📚 Bibliothèque en Ligne</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="results.html">Catalogue</a></li>
+          <li><a href="wishlist.html">Ma liste de lecture</a></li>
+          <li><a href="manage.html">Gérer les livres</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Bienvenue à la Bibliothèque en Ligne</h1>
+      <p>
+        Recherchez, découvrez et empruntez virtuellement des livres de notre collection.
+        Utilisez la barre de recherche ci-dessous pour trouver un livre par titre ou par auteur.
+      </p>
+
+      <form id="search-form" class="search-form">
+        <input type="text" id="search-input" name="q" placeholder="Rechercher un titre ou un auteur…" required>
+        <button type="submit" class="btn btn-primary">Rechercher</button>
+      </form>
+    </section>
+
+    <section>
+      <h2 class="section-title">Comment utiliser le site</h2>
+      <div class="how-to">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Rechercher</h3>
+          <p>Saisissez un titre ou un nom d'auteur dans la barre de recherche.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Consulter</h3>
+          <p>Parcourez les résultats et cliquez sur « Voir les détails » pour en savoir plus.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Ajouter</h3>
+          <p>Ajoutez le livre à votre liste de lecture personnelle en un clic.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Gérer</h3>
+          <p>Retrouvez et gérez votre liste de lecture à tout moment.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      Projet Bibliothèque en Ligne — Cours Développement Web · Réalisé avec HTML, CSS, JavaScript, PHP &amp; MySQL
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
